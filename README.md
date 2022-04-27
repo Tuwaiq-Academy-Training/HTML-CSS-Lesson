@@ -147,7 +147,88 @@ HTML stands for Hypertext Markup Language
 
     <p>2<sup>3</sup></p>
     
-    # القوائم | Lists
+    
+# الوسائط | Media
+
+**مقدمة في عرض الصور و استخدام img**
+يمكن للصور تحسين تصميم صفحة الويب ومظهرها، ولعرض الصور في صفحة الويب يمكننا استخدام الوسم `<img>`.
+
+
+**طريقة استخدام src لتحديد مسار الصورة**
+لعرض الصورة داخل صفحة الويب يجب عليك استخدام `<img>` وتحديد مصدر الصورة المراد عرضها باستخدام src attribute حيث أن `src` هي اختصار لـكلمة source والتي تعني المصدر لاحظ معي المثال التالي:
+
+    <img src="images/profile.png" >
+
+في المثال السابق استخدام وسم `img` وتمرير قيمة "URL" الخاص بمسار الصورة المراد عرضها.
+
+
+**طريقة استخدام alt لشرح محتوى الصورة**
+يمكن استخدام `alt` لتوفير نص بديل لصورة، لاحظ معي المثال التالي:
+
+    <img src="images/profile.pn" alt="user profile image">
+
+
+**طريقة استخدام height و width لتحديد طول وعرض الصورة**
+يمكن تحديد طول الصورة باستخدام وسم `height` وكذلك لتحديد عرض الصورة يمكن استخدام وسم `width` لاحظ معي المثال التالي:
+
+    <img src="images/profile.png" width="400" height="320">
+
+في المثال السابق تم تحديد طول وعرض الصورة باستخدام وسمي `height` و `width`.
+
+
+**مقدمة في عرض المقاطع و طريقة استخدام** `video`
+لتضمين محتوى فيديو في صفحة ويب يمكن استخدام `<video>`.
+يمكن أن تحتوي `<video>` على `<source>` واحدة أو أكثر وذلك ليتمكن المتصفح من اختيار المصدر المدعوم الأول.
+
+    <video>
+    <source src="programming101.mp4" type="video/mp4">
+    <source src="programming101.ogg" type="video/ogg">
+    Couldn't present the video in this browser.
+    </video>
+
+
+
+**طريقة استخدام width و height لتحديد طول وعرض المقطع**
+
+    <video width="400" height="320" controls>
+    <source src="programming101.mp4" type="video/mp4">
+    <source src="programming101.ogg" type="video/ogg">
+    Couldn't present the video in this browser.
+    </video>
+
+
+
+**مقدمة في عرض التسجيلات الصوتية واستخدام audio**
+تُستخدم علامة `<audio>` لتضمين محتوى صوتي في صفحة ويب، مثل البرودكاست والكتب الصوتية أو غيرها من أنواع المحتوى الصوتي.
+
+
+
+**فائدة وطريقة استخدام** `<source>`
+يمكن أن تحتوي `<audio>` على `<source>` واحد أو أكثر وذلك ليتمكن المتصفح من اختيار المصدر المدعوم الأول.
+
+    <audio>
+    <source src="myPodcast.mp3" type="audio/mpeg">
+    <source src="myPodcast.ogg" type="audio/ogg">
+    Couldn't present the audio in this browser. 
+    </audio>
+
+سيتم عرض النص الذي يتم كتابته بين علامتي `<audio>` و `<audio/>` فقط في المتصفحات التي لاتدعم العنصر `<audio>`.
+
+
+
+**طريقة إضافة أدوات التحكم controls**
+حتى يتم إضافة أدوات التحكم - التي تشمل تشغيل وإيقاف مقطع الصوت والعودة للوراء والتقدم إلى الأمام وأداة التحكم بمستوى الصوت - نقوم بإضافة تعبير `controls` إلى `<audio>` كما هو موضح بالشكل التالي:
+
+    <audio controls>
+    <source src="myPodcast.mp3" type="audio/mpeg">
+    <source src="myPodcast.ogg" type="audio/ogg">
+    Couldn't present the audio in this browser. 
+    </audio>
+
+
+    
+    
+# القوائم | Lists
 
 
 ## مقدمة في list
