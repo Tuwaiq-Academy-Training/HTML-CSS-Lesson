@@ -521,8 +521,6 @@ HTML stands for Hypertext Markup Language
 # النصوص | Texts
 
 
-# النصوص
-
 هناك خصائص عديده لتنسيق النصوص في CSS مثل:
 
 | color           | لتغيير لون النص                                     |
@@ -595,8 +593,6 @@ HTML stands for Hypertext Markup Language
 
 # الإطارات | Borders
 
-
-# الإطارات
 
 لتنسيق الإطارات في CSS هناك خصائص لتغيير شكل الإطار وحجمه ولونه:
 
