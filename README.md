@@ -367,7 +367,10 @@ HTML stands for Hypertext Markup Language
 
 
 **القيمة‭`text`‭ ‬**
+
 تعتبر القيمة `text` القيمة الابتدائية للحقل `type` فهي تمثل حقل لإدخال بيانات نصية ولتوضيح الفكرة لاحظ المثال التالي:
+
+      
 
         <form>
         <input type="text" name="name">
